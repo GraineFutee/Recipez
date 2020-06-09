@@ -1,7 +1,8 @@
 ## Front Side of the website :
 
 requirement :
-npm install bulma
+
+    npm install bulma
 
     npm install --save @fortawesome/fontawesome-free
 
