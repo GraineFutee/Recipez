@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+
+// Set your brand colors
+$beige-light: #d0d1cd;
+$beige-lighter: #eff0eb;
+$white: #ffffff;
+
+$alizarin: #e74c3c;
+$wet_asphalt: #34495e;
+$turquoise: #1abc9c;
+$emerald: #2ecc71;
+$sun_flower: #f1c40f;
+$carot: #e67e22;
+$clouds: #ecf0f1;
+
+$orange_ville: #e17055;
+$american_river: #636e72;
+$bright_yarrow: #fdcb6e;
+$robins_egg_blue: #00cec9;
+$mint_leaf: #00b894;
+$electron_blue: #0984e3;
+$city_lights: #dfe6e9;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$grey-darker: $american_river;
+$primary: $orange_ville;
+$info: $mint_leaf;
+$info-invert: $white;
+$link: $bright_yarrow;
+$link-invert: $white;
+
+// Update some of Bulma's component variables
+$body-background-color: $city_lights;
+// $control-border-width: 2px;
+// $input-border-color: transparent;
+// $input-shadow: none;
+
+// Import only what you need from Bulma
+// @import "../../node_modules/bulma/sass/utilities/_all.sass";
+// @import "../../node_modules/bulma/sass/base/_all.sass";
+// @import "../../node_modules/bulma/sass/elements/button.sass";
+// @import "../../node_modules/bulma/sass/elements/container.sass";
+// @import "../../node_modules/bulma/sass/elements/title.sass";
+// @import "../../node_modules/bulma/sass/elements/box.sass";
+// @import "../../node_modules/bulma/sass/elements/tag.sass";
+// @import "../../node_modules/bulma/sass/elements/other.sass";
+// @import "../../node_modules/bulma/sass/elements/image.sass";
+// @import "../../node_modules/bulma/sass/elements/content.sass";
+// @import "../../node_modules/bulma/sass/elements/notification.sass";
+// @import "../../node_modules/bulma/sass/form/_all.sass";
+// @import "../../node_modules/bulma/sass/components/navbar.sass";
+// @import "../../node_modules/bulma/sass/components/level.sass";
+// @import "../../node_modules/bulma/sass/components/media.sass";
+// @import "../../node_modules/bulma/sass/components/card.sass";
+// @import "../../node_modules/bulma/sass/layout/hero.sass";
+// @import "../../node_modules/bulma/sass/layout/section.sass";
+// @import "../../node_modules/bulma/sass/grid/columns.sass";
+@import "../../node_modules/bulma/bulma.sass";

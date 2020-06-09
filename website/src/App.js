@@ -1,19 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Welcome from "./pages/Welcome/Welcome";
-import Search from "./pages/Search/Search";
-import Recipe from "./pages/Recipe/Recipe";
-import UpdateNew from "./pages/UpdateNew/UpdateNew";
-import MyRecipes from "./pages/MyRecipes/MyRecipes";
+import Welcome from "./components/pages/Welcome/Welcome";
+import Search from "./components/pages/Search/Search";
+import Recipe from "./components/pages/Recipe/Recipe";
+import UpdateNew from "./components/pages/UpdateNew/UpdateNew";
+import MyRecipes from "./components/pages/MyRecipes/MyRecipes";
+
+import Navbar from "./components/components/Navbar";
 
 function App() {
+  const [display, setDisplay] = useState("Home");
+
   return (
     <Router>
+      <Navbar
+        display={display}
+        setDisplay={(newDisplay) => setDisplay(newDisplay)}
+      />
       <Switch>
         <Route exact path="/">
-          <Welcome />
+          <Welcome
+            display={display}
+            setDisplay={(newDisplay) => setDisplay(newDisplay)}
+          />
         </Route>
         <Route path="/search">
           <Search />
